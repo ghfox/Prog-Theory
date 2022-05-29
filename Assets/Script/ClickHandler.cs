@@ -22,7 +22,7 @@ public class ClickHandler : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                var unit = hit.collider.GetComponentInParent<Incendiary>();
+                var unit = hit.collider.GetComponentInParent<FuseObject>();
                 if (unit != null)
                     unit.OnClick();
             }
